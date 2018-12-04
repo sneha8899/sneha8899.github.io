@@ -52,12 +52,44 @@
         background-color: #ddd;
         color: black;
       }
+      /*Create an unequal main and side bar column*/
+      .side{
+        -ms-flex:30%;
+        flex: 30%;
+        background-color: #f1f1f1;
+        padding: 20px;
+      }
+      .main{
+        -ms-flex: 70%;
+        flex: 70%;
+        background-color: white;
+        padding: 20px;
+      }
+      /*Foot*/
+      .footer {
+        padding: 20px;
+        text-align: center;
+        background: #ddd;
+      }
+      /*Make the website responsive*/
+      @media screen and (max-width: 700px){
+        .row{
+          flex-direction: column;
+        }
+      }
+      @media screen and (max-width: 400px){
+        .navbar a{
+          float: none;
+          width: 100%;
+        }
+      }
+      
     </style>
   </head>
   <body>
     <div class = "header">
       <h1>Welcome to Sneha's Website</h1>
-      <p>Messing with borders</p>
+      <p>Trying to add responsiveness to the website!</p>
     </div>
     <div class = "navbar">
       <a href = "index.html" class = "active"><i class = "fa fa-fw fa-home"></i> Home</a>
