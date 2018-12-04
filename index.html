@@ -52,6 +52,12 @@
         background-color: #ddd;
         color: black;
       }
+      .row {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+      }
       /*Create an unequal main and side bar column*/
       .side{
         -ms-flex:30%;
@@ -64,6 +70,12 @@
         flex: 70%;
         background-color: white;
         padding: 20px;
+      }
+      .fakeimg {
+        background-color: #aaa;
+        width:100%;
+        padding: 20px;
+        
       }
       /*Foot*/
       .footer {
@@ -98,6 +110,16 @@
       <a href = "resume.html"><i class="fa fa-fw fa-paperclip"></i> Resume</a>
       <a href = "projects&experiences.html"><i class="fa fa-fw fa-desktop"></i> Projects and Relevent Experience</a>
       <a href = "contactMe.html" class = "right"><i class="fa fa-fw fa-phone"></i> Say Hello!</a>
+    </div>
+    <div class = "row">
+      <div class = "side">
+        <h2>Hi!</h2>
+      </div>
+      <div class = "main">
+        <h2>TITLE</h2>
+        <p>text</p>
+        <p>text</p>
+      </div>
     </div>
   </body>
 </html>
