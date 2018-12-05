@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang = "en">
   <head>
-    <title>Career Goals</title>
+    <title>Sneha Srinivasan</title>
     <meta charset = "UTF-8" />
     <meta name = "viewport" content="width=devide-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
@@ -52,20 +52,93 @@
         background-color: #ddd;
         color: black;
       }
+      .row {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+      }
+      /*Create an unequal main and side bar column*/
+      .side{
+        -ms-flex:30%;
+        flex: 30%;
+        background-color: #f1f1f1;
+        padding: 20px;
+      }
+      .main{
+        -ms-flex: 70%;
+        flex: 70%;
+        background-color: white;
+        padding: 20px;
+      }
+      .fakeimg {
+        background-color: #aaa;
+        width:100%;
+        padding: 20px;
+        
+      }
+      /*Foot*/
+      .footer {
+        padding: 20px;
+        text-align: center;
+        background: #ddd;
+      }
+      /*Make the website responsive*/
+      @media screen and (max-width: 700px){
+        .row{
+          flex-direction: column;
+        }
+      }
+      @media screen and (max-width: 400px){
+        .navbar a{
+          float: none;
+          width: 100%;
+        }
+      }
+      
     </style>
   </head>
   <body>
     <div class = "header">
-      <h1>Welcome to Sneha's Website</h1>
-      <p>Messing with borders</p>
+      <h1>Sneha Srinivasan</h1>
+      <p>Welcome to my career portfolio.</p>
     </div>
     <div class = "navbar">
       <a href = "index.html"><i class = "fa fa-fw fa-home"></i> Home</a>
       <a href = "aboutMe.html"><i class="fa fa-fw fa-user"></i> About Me!</a>
-      <a href = "careerGoals.html" class = "active"><i class="fa fa-fw fa-trophy"></i> My Career Goals</a>
+      <a href = "careerGoals.html" class="active"><i class="fa fa-fw fa-trophy"></i> My Career Goals</a>
       <a href = "resume.html"><i class="fa fa-fw fa-paperclip"></i> Resume</a>
       <a href = "projects&experiences.html"><i class="fa fa-fw fa-desktop"></i> Projects and Relevent Experience</a>
       <a href = "contactMe.html" class = "right"><i class="fa fa-fw fa-phone"></i> Say Hello!</a>
+    </div>
+    <div class = "row">
+    <div class = "side">
+      <h3>Shoot for the stars and you'll land among the clouds</h3>
+      <img src="pics/rocketship.png" alt="Rockets" width="410" height="330">
+      <p>Sophomore-level undergraduate with extensive team leadership experience seeking internship or 
+        co-op where knowledge of software development, data science, artificial intelligence, and web 
+        development are assets. </p>
+    </div>
+      <div class = "main">
+        <h4>Software Development?</h3>
+        <h3>Data Science?</h3>
+        <h2>Artificial Intelligence?</h2>
+        <h5>So what does it all mean?</h2>
+        <p>As a student, I'm still exploring all the options that are available for me. And in this ever-changing world, the options 
+        are pretty much endless. It's all dependent on where I want to go and what I want to do. As I say all over this website,
+        my biggest goal is to make a difference through helping others.</p>
+        <p>The three fields listed across the top are the fields that I find the most interesting, but also are or contain skillsets
+        I find really valuable. Software is constantly changing and the skills I've learned through my experience both inside and
+        outside of the classroom will allow me to keep up with the demands and growth of this field. Software will always need 
+        updating and editing, and I think that's something I could be a valuable part of.</p>
+        <p>Data Science and Artificial Intelligence, while unrelated to Software Development, go hand in hand. The way that we
+        have programmed robots and machines to work like humans is incredible, and that's all due to the data that we have about 
+        humans - and we're constantly learning more! I think that tehcnology, and even the world as a whole, are headed in a direction
+        of relying on machinery to do human tasks, and this field will enable me to be a part of that. Additionally, a strong foundation
+        in software will enable me to have a strong foundation for this field as well.</p>
+      </div>
+
+    <div class="footer">
     </div>
   </body>
 </html>
