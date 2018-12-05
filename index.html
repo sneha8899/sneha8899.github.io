@@ -80,6 +80,26 @@
         padding: 20px;
         
       }
+      /*Making a picture grid on the side*/
+      .picrow {
+        display: -ms-flexbox; /* IE 10 */
+        display: flex;
+        -ms-flex-wrap: wrap; /* IE 10 */
+        flex-wrap: wrap;
+        padding: 0 4px;
+      }
+
+/* Create two equal columns that sits next to each other */
+      .piccolumn {
+        -ms-flex: 50%; /* IE 10 */
+        flex: 50%;
+        padding: 0 4px;
+      }
+
+      .piccolumn img {
+        margin-top: 8px;
+        vertical-align: middle;
+      }
       /*Foot*/
       .footer {
         padding: 20px;
@@ -122,7 +142,12 @@
     </div>
     <div class = "row">
       <div class = "side">
-        <img src="pics/378d8667-4746-4d03-950c-a564c9935c39.JPG" alt="Sneha home" class = "center">
+        <!-- Photo Grid -->
+        <div class="picrow"> 
+        <div class="piccolumn">
+          <img src="pics/378d8667-4746-4d03-950c-a564c9935c39.JPG" style="width:100%">
+          <img src="pics/Sne.jpg" style="width:100%">
+        </div>
         <div class="a">
         <h3><i class="fa fa-compass" aria-hidden="true"></i>Navigate my webpage!</h3>
         </div>
