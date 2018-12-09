@@ -17,6 +17,13 @@
         text-align: center;
         background: #1abc9c;
         color: white;
+        background-image: url("pics/IMG_9039.JPG");
+        filter: blur(8px);
+        -webkit-filter:blur(8px);
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
       }
       /*Increase the font size of h1*/
       .header h1{
@@ -120,29 +127,21 @@
         width: 50%;
       }
       /*Make the blurry header image*/
-      .bg-image{
-        background-image: url("pics/IMG_9039.JPG");
-        filter: blur(8px);
-        -webkit-filter:blur(8px);
-        height: 100%;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
       
       .bg-text{
-        background-color:rgb(0,0,0);
-        background-color:rgba(0,0,0, 0.4);
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
         color: white;
         font-weight: bold;
         border: 3px solid #f1f1f1;
         position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 2;
-        width: 80%;
-        text-align: center;
+        top: 0%;
+        left: 25%;
+        transform: translate(-20%, 0%);
+
+  width: 80%;
+  padding: 10px;
+  text-align: center;
       }
       /*Make the website responsive*/
       @media screen and (max-width: 700px){
@@ -161,7 +160,6 @@
   </head>
   <body>
     <div class = "header">
-      <div class ="bg-image"></div>
       <div class = "bg-text">
         <h2>Sneha Srinivasan</h2>
         <p> Welcome to my website.</p>
