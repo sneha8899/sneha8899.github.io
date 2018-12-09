@@ -52,13 +52,22 @@
         background-color: #ddd;
         color: black;
       }
-      .main{
+      .row {
         display: -ms-flexbox;
         display: flex;
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-        -ms-flex: 100%;
-        flex: 100%;
+      }
+      /*Create an unequal main and side bar column*/
+      .side{
+        -ms-flex:30%;
+        flex: 30%;
+        background-color: #f1f1f1;
+        padding: 20px;
+      }
+      .main{
+        -ms-flex: 70%;
+        flex: 70%;
         background-color: white;
         padding: 20px;
       }
@@ -77,8 +86,17 @@
       <a href = "projects&experiences.html"><i class="fa fa-fw fa-desktop"></i> Projects and Relevent Experience</a>
       <a href = "contactMe.html" class = "right"><i class="fa fa-fw fa-phone"></i> Say Hello!</a>
     </div>
-    <div class = "main">
+    <div class = "row">
+      <div class = "side">
       <h5>To view my resume in a printable format, click <a href="pics/Resume 10-11-2018.pdf" download = "Sneha's Resume">here</a>.</h5>
+      </div>
+      <div class = "main">
+        <h3>Education</h3>
+        <h5>The Ohio State University</h5>
+        <p>Currently, I'm a second year at The Ohio State University, with an anticipated graduation in Fall 2019. I'm in the process
+          of obtaining my Bachelors of Science in Honors Computer Science and Engineering, with a minor in Spanish./<p>
+        <p>Awards and Honors (2017 - Present): Maximus Scholarship, Dean's List</p>
+      </div>
     </div>
   </body>
 </html>
