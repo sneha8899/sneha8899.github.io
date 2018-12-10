@@ -25,6 +25,20 @@
         background-repeat: no-repeat;
         background-size: cover;
       }
+      .container {
+        position: relative;
+      }
+
+      /* Bottom right text */
+      .text-block {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        background-color: black;
+        color: white;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
       /*Increase the font size of h1*/
       .header h1{
         font-size: 40px;
@@ -160,10 +174,12 @@
   </head>
   <body>
     <div class = "header">
-      <div class = "bg-text">
-        <h2>Sneha Srinivasan</h2>
-        <p> Welcome to my website.</p>
-      </div>
+      <div class="container">
+        <div class="text-block"> 
+        <h4>Nature</h4>
+        <p>What a beautiful sunrise</p>
+  </div>
+</div>
     </div>
     <div class = "navbar">
       <a href = "index.html" class = "active"><i class = "fa fa-fw fa-home"></i> Home</a>
