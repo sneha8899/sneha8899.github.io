@@ -52,6 +52,25 @@
         background-color: #ddd;
         color: black;
       }
+       .row {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+      }
+      /*Create an unequal main and side bar column*/
+      .side{
+        -ms-flex:30%;
+        flex: 30%;
+        background-color: #f1f1f1;
+        padding: 20px;
+      }
+      .main{
+        -ms-flex: 70%;
+        flex: 70%;
+        background-color: white;
+        padding: 20px;
+      }
     </style>
   </head>
   <body>
@@ -66,6 +85,34 @@
       <a href = "resume.html"><i class="fa fa-fw fa-paperclip"></i> Resume</a>
       <a href = "projects&experiences.html" class = "active"><i class="fa fa-fw fa-desktop"></i> Projects and Relevent Experience</a>
       <a href = "contactMe.html" class = "right"><i class="fa fa-fw fa-phone"></i> Say Hello!</a>
+    </div>
+    <div class = "row">
+      <div class = "side">
+        <div class = "center">
+          <h3><b>Drugs, Cancers, and Biomarkers for Precision Medicine</b></h3>
+          <h3><b>The Robot Project</b></h3>
+          <h3><b>Software Design Project</b></h3>
+        </div>
+      </div>
+      <div class = "main">
+        <div class = "center">
+          <h1><b>Projects and Relevant Experiences</b></h1>
+        </div>
+        <p>In this section, I'll be giving an in depth explanation of my relevant projects and experiences. I hope to show my passion
+          and my abilities through the work I've done. Directly below this explanation will go my most recent experience, all the 
+          way down to my very first one.</p>
+        <div class = "center">
+          <h3>Student Intern, Department of Biomedical Informatics</h3>
+        </div>
+        <div class = "center">
+          <h3>The Robot Project</h3>
+        </div>
+        <div class = "center">
+          <h3>The Software Design Project</h3>
+        </div>
+        <div class = "center">
+        </div>
+      </div>
     </div>
   </body>
 </html>
