@@ -162,21 +162,13 @@
       <a href = "contactMe.html" class = "right"><i class="fa fa-fw fa-phone"></i> Say Hello!</a>
     </div>
     <div class = "row">
-      <div class = "side">
-        <img id="myImg" src="pics/posterfull.jpg" alt="Drugs, Cancers, and Biomarkers for Precision Medicine" 
-            style="width:100%; max-width:300px" class = "center">
-        <!-- The Modal -->
-        <div id="myModal" class="modal">
-         <!-- The Close Button -->
-         <span class="close">&times;</span>
-
-        <!-- Modal Content (The Image) -->
-        <img class="modal-content" id="img01">
-
-        <!-- Modal Caption (Image Text) -->
-        <div id="caption"></div>
-          <script>
-            // Get the modal
+      <div class = "side"> 
+        <img id = "myImg" src = "pics/posterfull.jpg" style = "width:100%;max-width:300px" class = "center">
+        <div id = "myModal class = "modal">
+        <span class = "close">&times;</span>
+        <img class = "modal-content" id = "img01">
+        <div id = "caption"></div>
+         <script>
             var modal = document.getElementById('myModal');
             // Get the image and insert it inside the modal - use its "alt" text as a caption
             var img = document.getElementById('myImg');
@@ -186,18 +178,15 @@
               modal.style.display = "block";
               modalImg.src = this.src;
               captionText.innerHTML = this.alt;
-            }
-            // Get the <span> element that closes the modal
+            }   
             var span = document.getElementsByClassName("close")[0];
             // When the user clicks on <span> (x), close the modal
             span.onclick = function() { 
               modal.style.display = "none";
             }
-          </script>  
-        </div>
-          <h3><b>Drugs, Cancers, and Biomarkers for Precision Medicine</b></h3>
-          <h3><b>The Robot Project</b></h3>
-          <h3><b>Software Design Project</b></h3>
+          </script>
+       </div>
+        <h3><b>Drugs, Cancers, and Biomarkers for Precision Medicine</b></h3>
       </div>
       </div>
       <div class = "main">
