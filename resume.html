@@ -17,10 +17,22 @@
         text-align: center;
         background: #1abc9c;
         color: white;
+        background-image: url("pics/IMG_3121.jpg");
+        /*filter: blur(8px);
+        -webkit-filter:blur(8px);
+        height: 100%;*/
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
       }
       /*Increase the font size of h1*/
       .header h1{
         font-size: 40px;
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+        color: white;
+        font-weight: bold;
+        border: 3px solid #f1f1f1;
       }
       /* Make the top and side navigation bars*/
       .navbar {
@@ -160,8 +172,8 @@
   </head>
   <body>
     <div class = "header">
-      <h1>Welcome to Sneha's Website</h1>
-      <p>Messing with borders</p>
+      <h1>Sneha Srinivasan</h1>
+      <p>My Resume</p>
     </div>
     <div class = "navbar">
       <a href = "index.html"><i class = "fa fa-fw fa-home"></i> Home</a>
