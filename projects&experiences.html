@@ -90,12 +90,12 @@
         width: 50%;
       }
       /* Style the Image Used to Trigger the Modal */
-      #myImg {
+      .myImg {
         border-radius: 5px;
         cursor: pointer;
         transition: 0.3s;
       }
-      #myImg:hover {opacity: 0.7;}
+      .myImg:hover {opacity: 0.7;}
       /* The Modal (background) */
       .modal {
         display: none; /* Hidden by default */
@@ -158,6 +158,13 @@
         .modal-content {
           width: 100%;
         }
+      .rotate90 {
+        -webkit-transform:rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transform: rotate(90deg);
+      }
     </style>
   </head>
   <body>
@@ -174,32 +181,57 @@
       <a href = "contactMe.html" class = "right"><i class="fa fa-fw fa-phone"></i> Say Hello!</a>
     </div>
     <div class = "row">
-      <div class = "side"> 
-         <img id = "myImg" src="pics/posterfull.jpg" alt = "Drugs, Cancers, and Biomarkers for Precision Medicine" 
+      <div class = "side">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <div>
+         <img class = "myImg" src="pics/posterfull.jpg" alt = "Drugs, Cancers, and Biomarkers for Precision Medicine" 
               class = "center">
+        </div>
+        <div>
+          <img class = "myImg" src="pics/IMG_8216.jpg" alt = "Me, presenting my poster at the showcase." 
+              class = "center">
+        </div>
+        <div>
+          <img class = "myImg" src="pics/IMG_7121.jpg" alt = "My group for the robot design project" 
+              class = "center">
+        </div>
+        <div>
+          <img class = "myImg" src="pics/IMG_6543.jpg" alt = "The mock-up/prototype of the robot" 
+              class = "center">
+        </div>
+        <div>
+          <img class = "myImg" src="pics/IMG_6841.jpg" alt = "The final form of the robot" 
+              class = "center">
+        </div>
+        <div>
+          <img class = "myImg" src="pics/IMG_6542.jpg" alt = "The FEH PROTEUS touchscreen microcontroller" 
+              class = "center">
+        </div>
         <!-- The Modal -->
         <div id="myModal" class="modal">
 
          <!-- The Close Button -->
-         <span class="close">&times;</span>
+         <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
 
         <!-- Modal Content (The Image) -->
         <img class="modal-content" id="img01">
 
         <!-- Modal Caption (Image Text) -->
         <div id="caption"></div>
+        </div>
           <script>
             // Get the modal
             var modal = document.getElementById('myModal');
             // Get the image and insert it inside the modal - use its "alt" text as a caption
-            var img = document.getElementById('myImg');
-            var modalImg = document.getElementById("img01");
+            var img = $('.myImg');
+            var modalImg = $("#img01");
             var captionText = document.getElementById("caption");
-            img.onclick = function(){
-              modal.style.display = "block";
-              modalImg.src = this.src;
-              captionText.innerHTML = this.alt;
-            }
+            $('.myImg').click(function(){
+                modal.style.display = "block";
+                var newSrc = this.src;
+                modalImg.attr('src', newSrc);
+                captionText.innerHTML = this.alt;
+            });
             // Get the <span> element that closes the modal
             var span = document.getElementsByClassName("close")[0];
             // When the user clicks on <span> (x), close the modal
