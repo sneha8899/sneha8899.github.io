@@ -101,6 +101,56 @@
         background: #bb0000;
         color: white;
       }
+      input[type=text], select, textarea {
+          width: 100%;
+          padding: 12px;
+          border: 1px solid #ccc;
+          margin-top: 6px;
+          margin-bottom: 16px;
+          resize: vertical;
+      }
+
+      input[type=submit] {
+          background-color: #4CAF50;
+          color: white;
+          padding: 12px 20px;
+          border: none;
+          cursor: pointer;
+      }
+
+      input[type=submit]:hover {
+          background-color: #45a049;
+      }
+
+      /* Style the container/contact section */
+      .concontainer {
+          border-radius: 5px;
+          background-color: #f2f2f2;
+          padding: 10px;
+      }
+
+      /* Create two columns that float next to eachother */
+      .concolumn {
+          float: left;
+          width: 50%;
+          margin-top: 6px;
+          padding: 20px;
+      }
+
+      /* Clear floats after the columns */
+      .conrow:after {
+          content: "";
+          display: table;
+          clear: both;
+      }
+
+      /* Responsive layout -  each other */
+      @media screen and (max-width: 600px) {
+          .column, input[type=submit] {
+              width: 100%;
+              margin-top: 0;
+          }
+      }
     </style>
   </head>
   <body>
@@ -138,6 +188,28 @@
         </div>
       </div>
       <div class = "main">
+        <div class="concontainer">
+            <div style="text-align:center">
+              <h2>Say Hello!</h2>
+              <p>Feel free to leave a message or visit my social media</p>
+            </div>
+          <div class="conrow">
+            <div class="concolumn">
+              <img src="/sne.jpg" style="width:100%">
+            </div>
+            <div class="concolumn">
+              <form action="/action_page.php">
+                  <label for="fname">First Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                  <label for="lname">Last Name</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                  <label for="subject">Subject</label>
+                  <textarea id="subject" name="subject" placeholder="Say hello.." style="height:170px"></textarea>
+                  <input type="submit" value="Submit">
+              </form>
+            </div>
+          </div>
+      </div>
       </div>
     </div>
   </body>
