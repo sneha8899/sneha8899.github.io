@@ -163,7 +163,27 @@
     </div>
     <div class = "row">
       <div class = "side"> 
-         <img src="pics/posterfull.jpg" style= "width:160%">
+         <img id = "myImg" src="pics/posterfull.jpg" alt = "Drugs, Cancers, and Biomarkers for Precision Medicine" 
+              style="width:100%;max-width:300px" class = "center">
+        <div id = "myModal" class = "modal"></div>
+        <span class = "close">&times;</span>
+        <img class = "modal-content" id = "img01">
+        <div id = "caption"></div>
+        <script>
+          var modal = document.getElementById('myModal');
+          var img = document.getElementById('myImg');
+          var modalImg = document.getElementById("img01");
+          var captionText = document.getElementById("caption");
+          img.onclick = function(){
+            model.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+          }
+          var span = document.getElementsByClassName("close")[0];
+          span.onclick = function(){
+            modal.style.display = "non";
+          }
+        </script>
       </div>
       <div class = "main">
         <p>In this section, I'll be giving an in depth explanation of my relevant projects and experiences. I hope to show my passion
